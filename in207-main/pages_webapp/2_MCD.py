@@ -14,43 +14,36 @@ st.header("Énoncé du problème métier")
 
 st.markdown("""
 > **Contexte :**  
-> Une université souhaite gérer les informations de ses étudiants.
-> Pour commencer simplement, nous allons modéliser uniquement les étudiants
-> avec leurs informations de base.
+> Un organisme de formation de sportif semblable à l'INSEP souhaite prédire les blessures de leurs athlètes.
+> Nos entités seront les athlètes, leurs entrainements, leurs blessures, certains indicateurs physionomiques et le suivi de tests médicaux. 
 
 **Besoins identifiés :**
-- Stocker les informations des étudiants (nom, prénom, âge)
-- Pouvoir identifier chaque étudiant de manière unique
-- Permettre des recherches et des statistiques sur les étudiants
+- Identifier les athlètes, les entrainements et les tests médicaux de manière unique.
+- Permettre des recherches et des statistiques sur les blessures des athlètes.
 """)
-
-st.info("💡 Dans un cas réel, l'énoncé serait plus complexe avec plusieurs entités (cours, professeurs, inscriptions, etc.)")
 
 st.markdown("---")
 
 # Section : Schéma entité-association
 st.header("Schéma Entité-Association")
 
-st.markdown("""
-Pour ce problème simplifié, nous avons une seule entité :
-""")
-
 # Représentation textuelle du schéma E-A
-st.subheader("Entité : ETUDIANT")
+st.subheader("Exemple d'entité : ATHLETE")
 
-col1, col2, col3 = st.columns([1, 2, 1])
+col1, col2, col3 = st.columns([1, 1, 1])
 
 with col2:
     st.markdown("""
     ```
-    ┌─────────────────────────┐
-    │        ETUDIANT         │
-    ├─────────────────────────┤
-    │  #id                    │
-    │   nom                   │
-    │   prenom                │
-    │   age                   │
-    └─────────────────────────┘
+    ┌─────────────────────────────────────┐
+    │               ATHLETE               │
+    ├─────────────────────────────────────┤
+    │               #id_athlete           │
+    │               age                   │
+    │               genre                 │
+    │               sport                 │
+    |               bmi                   |
+    └─────────────────────────────────────┘
     ```
     """)
 
@@ -63,16 +56,9 @@ st.markdown("""
 st.markdown("---")
 
 # Placeholder pour une image
-st.subheader("📷 Schéma graphique (placeholder)")
+st.subheader("📷 Schéma Entité-Association")
 
-st.warning("""
-**Emplacement réservé pour un schéma graphique**
-
-Vous pouvez ajouter ici une image de votre schéma entité-association :
-```python
-st.image("chemin/vers/schema_mcd.png", caption="Schéma E-A")
-```
-""")
+st.image("MCD-MLD/MCD.png", caption="Schéma E-A")
 
 st.markdown("---")
 

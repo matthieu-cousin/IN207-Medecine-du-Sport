@@ -16,26 +16,37 @@ st.markdown("""
 Le passage du MCD au MLD consiste à traduire les entités en **tables relationnelles**.
 """)
 
-st.subheader("Table : Etudiant")
+st.subheader("Exemple pour une table : Athlete")
 
 # Tableau décrivant la structure
 st.markdown("""
 | Attribut | Type | Contraintes |
 |----------|------|-------------|
-| `id` | INTEGER | PRIMARY KEY |
-| `nom` | TEXT | NOT NULL |
-| `prenom` | TEXT | NOT NULL |
-| `age` | INTEGER | - |
+| `#id_athlete` | INTEGER | PRIMARY KEY |
+| `age` | INTEGER | CHECK (age > 0) |
+| `genre` | TEXT | NOT NULL |
+| `sport` | TEXT | NOT NULL |
+| `bmi` | REAL | - |
 """)
 
 st.markdown("""
 **Remarques :**
-- La clé primaire `id` identifie de manière unique chaque étudiant
-- Les attributs `nom` et `prenom` sont obligatoires (NOT NULL)
-- L'attribut `age` est optionnel
+- La clé primaire 🔑 `#id_athlete` identifie de manière unique chaque sportif.
+- L'attribut `age` est strictement positif.       
+- Les attributs `sport` et `genre` sont obligatoires (NOT NULL).
+- L'attribut `bmi` est optionnel.
 """)
 
-st.info("💡 Dans un schéma plus complexe, on aurait des clés étrangères pour lier les tables entre elles.")
+st.markdown("---")
+
+# Placeholder pour une image
+st.subheader("📷 MLD")
+
+st.image("MCD-MLD/MLD.png", caption="Modèle Logique de Données")
+
+st.info("""
+**Remarque :** La clé étrangère (représenté par 🔗 sur le MLD) fait référence à la clef primaire d'une autre table.
+""")
 
 st.markdown("---")
 

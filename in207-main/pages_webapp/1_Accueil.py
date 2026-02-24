@@ -32,21 +32,22 @@ with col1:
     - Identification des entités et associations
     - Schéma entité-association
     """)
+
+    st.subheader("3️⃣ Création et Peuplement (DDL)")
+    st.markdown("""
+    - Requêtes CREATE TABLE
+    - Requêtes INSERT
+    - Création de la base SQLite
+    """)
     
+with col2:
+
     st.subheader("2️⃣ Modèle Logique de Données (MLD)")
     st.markdown("""
     - Traduction du MCD en tables
     - Définition des attributs et types
     - Clés primaires et étrangères
     - Introduction à l'algèbre relationnelle
-    """)
-
-with col2:
-    st.subheader("3️⃣ Création et Peuplement (DDL)")
-    st.markdown("""
-    - Requêtes CREATE TABLE
-    - Requêtes INSERT
-    - Création de la base SQLite
     """)
     
     st.subheader("4️⃣ Requêtes SQL")
@@ -55,7 +56,6 @@ with col2:
     - Filtrage, projection, jointures
     - Correspondance avec l'algèbre relationnelle
     """)
-
 
 st.markdown("---")
 
