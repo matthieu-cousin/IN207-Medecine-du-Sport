@@ -124,7 +124,7 @@ st.latex(r"R_9 = \pi_{A1.id\_athlete, A2.id\_athlete} ( \sigma_{A1.id\_athlete \
 
 st.subheader("Bloc 5 : Conformité et Protocoles")
 
-st.markdown("**R10 : Quels sont les athlètes ayant réalisé l'intégralité du protocole ?**")
+st.markdown("**R10 : Quels sont les athlètes ayant réalisé l'intégralité du protocole médical ?**")
 st.latex(r"R_{10} = \pi_{id\_athlete, id\_test} (PASSER) \div \pi_{id\_test} (TEST\_MEDICAL)")
 
 

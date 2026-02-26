@@ -76,3 +76,6 @@ if os.path.exists(DB_PATH):
             st.info("La table Etudiant est vide.")
     except Exception as e:
         st.error(f"Erreur de lecture : {e}")
+
+st.markdown(""" Nos données proviennent d'un Dataset récupéré sur Kaggle.com intitulé : "Multimodal Sports Injury Prediction Dataset".""")
+st.link_button("Lien vers le Dataset","https://www.kaggle.com/datasets/anjalibhegam/multimodal-sports-injury-dataset")
