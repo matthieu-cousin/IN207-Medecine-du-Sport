@@ -94,7 +94,7 @@ st.latex(r"R_2 = \pi_{sport} (ATHLETE)")
 
 st.subheader("Bloc 2 : Analyse de l'Entraînement")
 
-st.markdown("**R3 : Lister la durée des séances d'entrainement de l'athlète 150.**")
+st.markdown("**R3 : Quelle est la liste des séances d'entrainement de l'athlète 150 avec leurs durées ?**")
 st.latex(r"R_3 = \pi_{date\_seance, duree\_minutes} ( \sigma_{id\_athlete = 150} (ENTRAINEMENT) )")
 
 st.markdown("**R4 : Quelle est la liste des séances d'entrainement à haute intensité ?**")
@@ -113,7 +113,7 @@ st.latex(r"R_6 = \pi_{id\_athlete} ( \sigma_{niveau\_stress > 0.8} (INDICATEUR\_
 st.subheader("Bloc 4 : Analyse des Incidents (Blessures)")
 
 st.markdown("**R7 : Quelles sont les surfaces de jeu à risque chez les femmes ?**")
-st.latex(r"R_7 = \pi_{surface\_jeu} ( (ATHLETE \bowtie ENTRAINEMENT \bowtie BLESSURE) \bowtie \sigma_{genre = 'Female'} (ATHLETE) )")
+st.latex(r"R_7 = \pi_{surface\_jeu} (\sigma_{genre = 'Female'} (ATHLETE) \bowtie ENTRAINEMENT \bowtie BLESSURE)")
 
 st.markdown("**R8 : Quels athlètes ne se sont jamais blessés ?**")
 st.latex(r"R_8 = \pi_{id\_athlete} (ATHLETE) - \pi_{id\_athlete} (ENTRAINEMENT \bowtie BLESSURE)")
